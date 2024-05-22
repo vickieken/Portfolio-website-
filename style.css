@@ -1,0 +1,292 @@
+   
+    /* || RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* || VARIABLES */ 
+    
+    :root {
+        /* Primary */
+        --WHITE: #ffffff;
+        --RED: #cb0000;
+        --BLACK: #000000;
+        --DARK-GREY: #1e1e1e;
+        --LIGHT-GREY: #676767;
+        /* Paragraph sizes */
+        --PARAGRAPH-SIZE: 11px;
+    
+    
+        /* Layout */
+    /* The designs were created to the following widths: */
+    
+     --Mobile: 375px;
+     --Desktop: 1440px;
+    }
+    
+    /* General Design */
+
+    body {
+        position: relative;
+    }
+
+    /* Nav Part */
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav .navbar {
+        position: absolute;
+        top: 0;
+        right: -800px;
+        height: 100vh;
+        background: var(--DARK-GREY);
+        width: 50%;
+        transition: all 2s ease-in-out;
+    }
+
+    nav .fa-bars, .fa-times {
+        cursor: pointer;
+    }
+
+    nav .navbar.showbar {
+        right: 0;
+    }
+
+    nav .navbar .lang {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        flex-flow: row;
+        color: var(--WHITE);
+    }
+
+
+    nav .navbar .lang .lang-opt {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        flex-flow: row;
+        font-size: var(--PARAGRAPH-SIZE);
+        margin-bottom: 30px;
+    }
+
+    nav .navbar .lang .lang-opt h5 {
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    nav .navbar .lang .lang-opt h5:hover {
+        color: var(--RED);
+    }
+
+    nav .navbar .menu ul {
+        list-style: none;
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    nav .navbar .menu ul li {
+        margin-top: 20px;
+    }
+
+    nav .navbar .menu ul li a {
+        color: var(--WHITE);
+        font-size: 16px;
+        text-decoration: none;
+        transition: all 1s ease-in-out;
+        position: relative;
+    }
+
+    nav .navbar .menu ul li a::before {
+        content: '';
+        position: absolute;
+        left: -15px;
+        top: 20%;
+        background: var(--RED);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    nav .navbar .menu ul li a:hover::before {
+        opacity: 1;
+    }
+
+    nav .navbar .menu ul li a:hover {
+        color: var(--RED);
+    }
+
+    nav .logo a {
+        color: var(--WHITE);
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    nav .logo span {
+        color: var(--RED);
+        font-size: 25px;
+        padding-left: 2px;
+    }
+
+    nav .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    nav .nav .fa {
+        color: var(--WHITE);
+    }
+
+    nav .nav-footer {
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: var(--WHITE);
+    } 
+
+    nav .nav-footer .social-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 15px;
+    } 
+
+    nav .nav-footer .social-icons .fab {
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+    } 
+
+    nav .nav-footer .copy-right {
+        display: flex;
+        flex-flow: column;
+        font-size: var(--PARAGRAPH-SIZE);
+        width: 105px;
+    } 
+
+    nav .nav-footer .social-icons .fab:hover {
+        color: var(--RED);
+    } 
+
+    nav .nav-footer .copy-right  {
+       font-weight: 100;
+       line-height: 1.4;
+    } 
+
+    nav .nav-footer .copy-right span {
+        white-space: nowrap;
+    } 
+
+    /* Side Icons */
+
+    main .side-icons {
+        position: absolute;
+        color: var(--WHITE);
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        top: 10px;
+        padding-top: 35px;
+        font-size: 13px;
+    }
+
+    main .side-icons .line1 {
+        width: 1px;
+        height: 300px;
+        background-color: var(--LIGHT-GREY);
+    }
+
+    main .side-icons .icons {
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    main .side-icons .icons a {
+        color: var(--WHITE);
+        transition: all 1s ease-in-out;
+    }
+
+    main .side-icons .icons a:hover {
+        color: var(--RED);
+    }
+
+    main .side-icons .line2 {
+        width: 1px;
+        height: 300px;
+        background-color: var(--LIGHT-GREY);
+    }
+
+    /* Section One */
+    
+    #section-one {
+        background: url(./imgs/shadows\ img\ copy.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #section-one .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        height: 100vh;
+        padding-left: 70px;
+        padding-top: 130px;
+        width: 40%;
+    }
+
+    #section-one .container .play-btn .fa-play {
+        border: 1px solid var(--WHITE);
+        color: var(--WHITE);
+        padding: 20px;
+        border-radius: 50%;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+
+    #section-one .play-btn h4 {
+        color: var(--WHITE);
+        font-size: 10px;
+        font-weight: lighter;
+    }
+
+    #section-one .intro h3 {
+        color: var(--WHITE);
+        font-size: 50px;
+        font-weight: lighter;
+        line-height: 2;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-one .intro span {
+        color: var(--RED);
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-one .intro p {
+        color: var(--LIGHT-GREY);
+        font-size: 10px;
+        font-weight: lighter;
+        margin-bottom: 40px;
+        line-height: 2;
+    }
