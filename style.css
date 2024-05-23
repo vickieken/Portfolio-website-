@@ -52,6 +52,7 @@
         background: var(--DARK-GREY);
         width: 50%;
         transition: all 2s ease-in-out;
+        z-index: 1;
     }
 
     nav .fa-bars, .fa-times {
@@ -195,6 +196,12 @@
 
     /* Side Icons */
 
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
     main .side-icons {
         position: fixed;
         color: var(--WHITE);
@@ -251,6 +258,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        scroll-snap-align: start;
+        transition: transform 0.8s ease;
     }
 
     #section-one .container {
@@ -311,6 +320,8 @@
             display: flex;
             align-items: center;
             padding: 80px;
+            scroll-snap-align: start;
+        transition: transform 0.8s ease;
     }
 
     #section-two .second-container .experience {
