@@ -981,8 +981,30 @@
         flex-flow: column;
     }
 
+    #section-three .third-container h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
     #section-three .third-container .third-container-content .about-details {
         width: 80%;
+    }
+
+    #section-three .third-container .third-container-content .about-details .biography h4 {
+        padding-bottom: 3px;
+    }
+
+    #section-three .third-container .third-container-content .about-details .services h4 {
+        padding-bottom: 3px;
+    }
+
+    #section-three .third-container .third-container-content .about-details .location h4 {
+        padding-bottom: 3px;
+    }
+
+    #section-three .third-container .third-container-content .achievments h4 {
+        padding-bottom: 3px;
     }
 
     #section-three .third-container .third-container-content .achievments {
@@ -1000,8 +1022,14 @@
         align-items: flex-start;
     }
 
+    #section-three .third-container .third-container-content .achievments .happy-clients {
+        align-items: flex-start;
+        padding-bottom: 15px;
+    }
+
     #section-three .third-container .third-container-content .achievments .completed-jobs {
         align-items: flex-start;
+        padding-bottom: 3px;
     }
 
     #section-three .third-container .third-container-content .achievments .completed-jobs .text {
