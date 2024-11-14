@@ -1380,6 +1380,23 @@
         flex-flow: column;
     }
 
+    #section-four .fourth-container .third-layer a::before {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #section-four .fourth-container .third-layer a:hover {
+        background: var(--WHITE);
+        color: var(--RED);
+    }
+
+    #section-four .fourth-container .third-layer a:hover::before {
+        width: 0%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
     /* Section five */
     #section-five {
         padding-top: 300px;
