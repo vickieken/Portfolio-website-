@@ -1354,16 +1354,20 @@
 
     /* section four */
     #section-four {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     #section-four .fourth-container .first-layer {
-        padding-bottom: 5px;
+        padding-bottom: 0px;
     }
 
     #section-four .fourth-container h1 {
         font-size: 30px;
         padding-bottom: 5px;
+    }
+
+    #section-four .fourth-container p {
+        text-align: center;
     }
 
     #section-four .fourth-container .second-layer {
