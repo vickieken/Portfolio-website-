@@ -6,7 +6,7 @@ const navOption = document.querySelector(".navbar");
 
 const intro = document.querySelector(".intro");
 
-const navLink = document.querySelectorAll(".nav-link");
+const navli = document.querySelectorAll(".nav-link");
 
 // const fillWeb = document.querySelectorAll("");
 
@@ -18,6 +18,23 @@ cancelBar.addEventListener("click", ()=> {
     navOption.classList.toggle("showbar");
 });
 
-navLink.addEventListener("click", ()=> {
+function closeBar() {
     navOption.classList.toggle("showbar");
-});
+};
+
+function showOverlayAndScroll(event, link) {
+    event.preventDefault();
+
+    const overlay = document.querySelector(".black-overlay");
+    const target = document.querySelector(link.getAttribute('href'));
+
+    overlay.classList.add('show');
+
+    setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth' });
+
+        setTimeout(() => {
+            overlay.classList.remove('show');
+        }, 500);
+    }, 200);
+}

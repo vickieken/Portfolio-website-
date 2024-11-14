@@ -8,10 +8,7 @@
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    html {
-        scroll-behavior: smooth;
-    }
-    
+
     /* || VARIABLES */ 
     
     :root {
@@ -200,6 +197,25 @@
         overflow-y: scroll;
         scroll-snap-type: y mandatory;
     }
+
+    .black-overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--BLACK);
+        opacity: 0;
+        z-index: 100000;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+    }
+
+    .black-overlay.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 
     main .side-icons {
         position: fixed;
@@ -909,6 +925,16 @@
         white-space: nowrap;
     } 
 
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .black-overlay {
+        z-index: 0;
+    }
+
     /* Section One */
     
     #section-one {
@@ -984,7 +1010,7 @@
     #section-three .third-container h1 {
         text-align: center;
         font-size: 40px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
     #section-three .third-container .third-container-content .about-details {
@@ -1014,6 +1040,15 @@
         align-items: flex-start;
     }
 
+    #section-three .third-container .third-container-content .achievments .achieve-cont {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        width: 60%;
+    }
+
     #section-three .third-container .third-container-content .achievments .happy-clients {
         align-items: flex-start;
     }
@@ -1022,18 +1057,26 @@
         align-items: flex-start;
     }
 
+    #section-three .third-container .third-container-content .achievments .happy-clients .num {
+        font-size: 20px;
+    }
+
     #section-three .third-container .third-container-content .achievments .happy-clients {
         align-items: flex-start;
         padding-bottom: 15px;
     }
 
     #section-three .third-container .third-container-content .achievments .completed-jobs {
-        align-items: flex-start;
+        align-items: flex-end;
         padding-bottom: 3px;
     }
 
     #section-three .third-container .third-container-content .achievments .completed-jobs .text {
-        align-items: flex-start;
+        align-items: flex-end;
+    }
+
+    #section-three .third-container .third-container-content .achievments .completed-jobs .num {
+        font-size: 20px;
     }
 
     }

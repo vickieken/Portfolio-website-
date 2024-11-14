@@ -32,13 +32,13 @@
 
                 <div class="menu">
                     <ul>
-                        <li><a class="nav-link" href="/">Home</a></li>
-                        <li><a class="nav-link" href="#section-two">About</a></li>
-                        <li><a class="nav-link" href="/">Projects</a></li>
-                        <li><a class="nav-link" href="/">Education</a></li>
-                        <li><a class="nav-link" href="/">Testimonials</a></li>
-                        <li><a class="nav-link" href="/">Blog</a></li>
-                        <li><a class="nav-link" href="/">Contact</a></li>
+                        <li><a class="nav-link" href="#section-one" onclick="closeBar(), showOverlayAndScroll(event, this)">Home</a></li>
+                        <li><a class="nav-link" href="#section-two" onclick="closeBar(), showOverlayAndScroll(event, this)">About</a></li>
+                        <li><a class="nav-link" href="/" onclick="closeBar(), showOverlayAndScroll(event, this)">Projects</a></li>
+                        <li><a class="nav-link" href="/" onclick="closeBar(), showOverlayAndScroll(event, this)">Education</a></li>
+                        <li><a class="nav-link" href="/" onclick="closeBar(), showOverlayAndScroll(event, this)">Testimonials</a></li>
+                        <li><a class="nav-link" href="/" onclick="closeBar(), showOverlayAndScroll(event, this)">Blog</a></li>
+                        <li><a class="nav-link" href="/" onclick="closeBar(), showOverlayAndScroll(event, this)">Contact</a></li>
                     </ul>
                 </div>
 
@@ -58,6 +58,7 @@
     </header>
 
     <main>
+        <div class="black-overlay"></div>
         <div class="side-icons">
             <div class="line1"></div>
             <div class="icons">
@@ -172,20 +173,22 @@
                     <div class="achievments">
                         <h4>Achievments<span class="dot">.</span></h4>
     
-                        <div class="happy-clients">
-                            <i class="fa fa-suitcase"></i>
-    
-                            <span class="num">40+</span>
-                            
-                            <div class="text"><span>Happy</span> <span>Clients</span></div>
-                        </div>
-    
-                        <div class="completed-jobs">
-                            <i class="fa fa-grin-wink"></i>
-    
-                            <span class="num">100+</span>
-    
-                            <div class="text"><span>Completed</span> <span>Jobs</span></div>
+                        <div class="achieve-cont">
+                            <div class="happy-clients">
+                                <i class="fa fa-suitcase"></i>
+        
+                                <span class="num">40+</span>
+                                
+                                <div class="text"><span>Happy</span> <span>Clients</span></div>
+                            </div>
+        
+                            <div class="completed-jobs">
+                                <i class="fa fa-grin-wink"></i>
+        
+                                <span class="num">100+</span>
+        
+                                <div class="text"><span>Completed</span> <span>Jobs</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
