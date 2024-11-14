@@ -1353,8 +1353,17 @@
     }
 
     /* section four */
+    #section-four {
+        padding-top: 100px;
+    }
+
+    #section-four .fourth-container .first-layer {
+        padding-bottom: 5px;
+    }
+
     #section-four .fourth-container h1 {
         font-size: 30px;
+        padding-bottom: 5px;
     }
 
     #section-four .fourth-container .second-layer {
