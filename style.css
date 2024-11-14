@@ -1020,6 +1020,12 @@
         }
     }
 
+    @media (max-width: 800px) {
+        #section-five {
+            padding-top: 200px;
+        }
+    }
+
     @media (max-width: 700px) {
 
         body {
@@ -1376,7 +1382,7 @@
 
     /* Section five */
     #section-five {
-        padding-top: 500px;
+        padding-top: 300px;
     }
 
     #section-five .fifth-container h1 {
@@ -1401,8 +1407,8 @@
     }
 
     #section-five .fifth-container .first-layer .skill-img-corel {
-        width: 90px;
-        height: 140px;
+        width: 70px;
+        height: 110px;
         padding-bottom: 30px;
         padding-top: 10px;
     }
@@ -1412,6 +1418,18 @@
     @media (max-width: 540px) {
         #section-five {
             padding-top: 300px;
+        }
+    }
+
+    @media (max-width: 460px) {
+        #section-five {
+            padding-top: 400px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        #section-five {
+            padding-top: 500px;
         }
     }
 
