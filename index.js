@@ -36,5 +36,5 @@ function showOverlayAndScroll(event, link) {
         setTimeout(() => {
             overlay.classList.remove('show');
         }, 500);
-    }, 200);
+    }, 500);
 }

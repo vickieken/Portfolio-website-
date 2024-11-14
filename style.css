@@ -745,7 +745,168 @@
         color: var(--LIGHTER-GREY);
         font-weight: bold;
     }
+
+    /* Section four */
+
+    #section-four {
+        background: #0a0a0a;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 80px;
+        scroll-snap-align: start;
+    transition: transform 0.8s ease;
+}
+
+    #section-four .fourth-container {
+    display: flex;
+    flex-flow: column;
+    color: var(--WHITE);
+    gap: 20px;
+    }
+
+    #section-four .fourth-container .dot {
+        color: var(--RED);
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-four .fourth-container h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    #section-four .fourth-container h4 {
+        white-space: nowrap;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #section-four .fourth-container p {
+        font-size: 13px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.4;
+    }
     
+    #section-four .fourth-container .first-layer {
+        padding-bottom: 20px;
+    }
+    
+    #section-four .fourth-container .second-layer {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+    
+    #section-four .fourth-container .second-layer .graphic-design {
+        padding-bottom: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section-four .fourth-container .second-layer .graphic-design p {
+        font-size: 11px;
+        text-align: center;
+        width: 80%;
+    }
+    
+    #section-four .fourth-container .second-layer .graphic-design .fa {
+        font-size: 30px;
+        color: var(--RED);
+    }
+    
+    #section-four .fourth-container .second-layer .uiux-design {
+        padding-bottom: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section-four .fourth-container .second-layer .uiux-design p {
+        font-size: 11px;
+        text-align: center;
+        width: 80%;
+    }
+    
+    #section-four .fourth-container .second-layer .uiux-design .fa {
+        font-size: 30px;
+        color: var(--RED);
+    }
+    
+    #section-four .fourth-container .second-layer .frontend-dev {
+        padding-bottom: 15px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section-four .fourth-container .second-layer .frontend-dev p {
+        font-size: 11px;
+        text-align: center;
+        width: 80%;
+    }
+    
+    #section-four .fourth-container .second-layer .frontend-dev .fab {
+        font-size: 30px;
+        color: var(--RED);
+    }
+
+    #section-four .fourth-container .third-layer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: -20px;
+    }
+
+    #section-four .fourth-container .third-layer a {
+        font-size: 10px;
+        text-decoration: none;
+        color: var(--WHITE);
+        padding: 8px 20px;
+        border-radius: 20px;
+        position: relative;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+    }
+
+    #section-four .fourth-container .third-layer a::before {
+        content: "";
+        position: absolute;
+        background: var(--RED);
+        top: 0;
+        left: 0;
+        width: 28.5%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        transition: all 1s ease-in-out;
+        z-index: -1;
+    }
+
+    #section-four .fourth-container .third-layer a:hover {
+        background: var(--WHITE);
+    }
+
+    #section-four .fourth-container .third-layer a:hover::before {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 
     @media (max-width: 700px) {
 
@@ -1034,7 +1195,7 @@
     }
 
     #section-three .third-container .third-container-content .achievments {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-flow: column;
         align-items: flex-start;
@@ -1077,6 +1238,12 @@
 
     #section-three .third-container .third-container-content .achievments .completed-jobs .num {
         font-size: 20px;
+    }
+
+    /* section four */
+
+    #section-four .fourth-container .second-layer {
+        flex-flow: column;
     }
 
     }
