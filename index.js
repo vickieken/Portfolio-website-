@@ -29,12 +29,12 @@ cancelBar.addEventListener("click", ()=> {
 
 backBtn.addEventListener('click', ()=> {
     scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 100;
+    scrollContainer.scrollLeft -= 200;
 })
 
  function nextBtn() {
     scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 100;
+    scrollContainer.scrollLeft += 200;
 };
 
 console.log(nextBtn);
