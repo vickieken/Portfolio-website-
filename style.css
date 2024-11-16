@@ -1117,6 +1117,7 @@
         transition: all 1s ease-in-out;
         border-radius: 20px;
         position: relative;
+        flex: 0 0 100%;
     }
 
     #section-six .sixth-container .card-item .card-details h5 {
@@ -1149,10 +1150,10 @@
     #section-six .sixth-container .card-item .card-details a {
         font-size: 8px;
         text-decoration: none;
-        padding: 10px;
-        border: 1px solid var(--RED);
-        border-radius: 50%;
-        color: var(--RED);
+        padding: 5px 15px;
+        border-radius: 20px;
+        background: var(--RED);
+        color: var(--WHITE);
         transition: all 1s ease-in-out .5s;
         opacity: 0;
         margin-top: 10px;
@@ -1160,7 +1161,6 @@
 
     #section-six .sixth-container .card-item:hover .card-details a {
         opacity: 1;
-        transform: rotate(-45deg);
     }
     
     /* #section-six .sixth-container .card-item:hover {
@@ -1216,7 +1216,7 @@
         top: 40%;
         cursor: pointer;
         transition: all 1s ease-in-out;
-        z-index: 100;
+        z-index: 0;
     }
     
     #section-six .sixth-container .wrapper .fa-caret-left {

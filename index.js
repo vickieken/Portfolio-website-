@@ -10,39 +10,41 @@ const navli = document.querySelectorAll(".nav-link");
 
 const scrollContainer = document.querySelector(".carousel");
 
+const nextButn = document.querySelector(".fa-caret-right");
+
 const backBtn = document.querySelector(".fa-caret-left");
 // const fillWeb = document.querySelectorAll("");
 
 menuBar.addEventListener("click", ()=> {
     navOption.classList.toggle("showbar");
     backBtn.style.zIndex = "0";
-    nextBtn.style.zIndex = "0";
+    nextButn.style.zIndex = "0";
 })
 
 cancelBar.addEventListener("click", ()=> {
     navOption.classList.toggle("showbar");
     setTimeout(() => {
         backBtn.style.zIndex = "100";
-        nextBtn.style.zIndex = "100";
+        nextButn.style.zIndex = "100";
     }, 1000);
 });
 
-backBtn.addEventListener('click', ()=> {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft -= 200;
-})
+// backBtn.addEventListener('click', ()=> {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft -= 200;
+// })
 
- function nextBtn() {
-    scrollContainer.style.scrollBehavior = "smooth";
-    scrollContainer.scrollLeft += 200;
-};
+//  function nextBtn() {
+//     scrollContainer.style.scrollBehavior = "smooth";
+//     scrollContainer.scrollLeft += 200;
+// };
 
 console.log(nextBtn);
 function closeBar() {
     navOption.classList.toggle("showbar");
     setTimeout(() => {
         backBtn.style.zIndex = "100";
-        nextBtn.style.zIndex = "100";
+        nextButn.style.zIndex = "100";
     }, 1000);
 
 };
@@ -64,4 +66,18 @@ function showOverlayAndScroll(event, link) {
     }, 500);
 }
 
+const cardWidth = scrollContainer.firstElementChild.offsetWidth + 5;
 
+function nextBtn() {
+    scrollContainer.scrollBy({
+        left: cardWidth, behavior: 'smooth'
+    });
+}
+
+backBtn.addEventListener('click', ()=> {
+    scrollContainer.scrollBy({
+        left: -cardWidth, behavior: 'smooth'
+    });
+});
+
+console.log(nextButn);
