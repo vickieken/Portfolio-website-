@@ -1100,6 +1100,7 @@
         grid-auto-columns: calc((100% / 4) - 5px);
         gap: 5px;
         overflow-x: auto;
+        overflow-y: hidden;
         scroll-behavior: smooth;
         width: 100%;
     }
@@ -1109,7 +1110,7 @@
     }
     
     #section-six .sixth-container .card-item {
-        height: auto;
+        height: 280px;
         width: 100%;
         text-align: center;
         cursor: pointer;
@@ -1781,6 +1782,10 @@
         padding: 0px 70px;
         margin-bottom: 15px;
         flex-flow: column;
+    }
+
+    #section-six .sixth-container .card-item {
+        height: 380px !important;
     }
 
     #section-six .sixth-container .card-item .img img {
