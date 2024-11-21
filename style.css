@@ -1285,6 +1285,173 @@
         border-bottom-right-radius: 20px;
     }
 
+    /* Section sevent */
+
+    #section-seven {
+        background: #0a0a0a;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 80px;
+        scroll-snap-align: start;
+    transition: transform 0.8s ease;
+}
+
+    #section-seven .seventh-container {
+    display: flex;
+    flex-flow: column;
+    color: var(--WHITE);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #section-seven .seventh-container hr {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #section-seven .seventh-container .dot {
+        color: var(--RED);
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-seven .seventh-container h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    #section-seven .seventh-container h4 {
+        white-space: nowrap;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #section-seven .seventh-container p {
+        font-size: 13px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.4;
+        padding-top: 20px;
+    }
+    
+    #section-seven .seventh-container .first-layer {
+        padding-bottom: 20px;
+    }
+    
+    #section-seven .seventh-container .wrapper {
+        background: var(--WHITE);
+        outline: 1px solid var(--WHITE);
+        outline-offset: 3px;
+        width: 100%;
+        max-width: 600px;
+        min-height: 20em;
+        border-radius: 0.6em;
+        display: flex;
+        position: relative;
+        transition: all 1s ease-in-out;
+    }
+    
+    #section-seven .seventh-container .wrapper:hover {
+        outline: 1px solid var(--RED);
+    }
+    
+    #section-seven .seventh-container .wrapper .testimonial-container {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        padding: 1.8em 1.2em;
+        margin: auto;
+    }
+    
+    #section-seven .seventh-container .wrapper button {
+        font-size: 1.2em;
+        height: 1.8em;
+        width: 1.8em;
+        padding: 0em;
+        background: var(--WHITE);
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        border: none;
+        color: var(--RED);
+        cursor: pointer;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.424);
+        border-radius: 50%;
+        transition: all 1s ease-in-out;
+    }
+    
+    #section-seven .seventh-container .wrapper button:hover {
+        background: var(--RED);
+        color: var(--WHITE);
+    }
+    
+    #section-seven .seventh-container .wrapper button#next {
+        right: -1em;
+    }
+    
+    #section-seven .seventh-container .wrapper button#prev {
+        left: -1em;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container p {
+        font-size: 12px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container h3 {
+        font-size: 12px;
+        color: var(--BLACK);
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 3px;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container .fa {
+        font-size: 12px;
+        color: var(--RED);
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 8px;
+        display: block;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container h6 {
+        font-size: 10px;
+        color: var(--RED);
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container img {
+        display: block;
+        margin: 1em auto 1em auto;
+        outline: 1px solid var(--RED);
+        outline-offset: 3px;
+        width: 4em;
+        height: 4em;
+        object-fit: cover;
+        border-radius: 50%;
+        background: var(--RED);
+    }
+
 
     @media (max-width: 1000px) {
         #section-five .fifth-container .first-layer {
@@ -1741,6 +1908,16 @@
     }
 
     /* section six */
+    #section-six .sixth-container .first-layer h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    #section-six .sixth-container p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
     #section-six .sixth-container .third-layer a::before {
         width: 100%;
         border-top-right-radius: 20px;
@@ -1764,6 +1941,61 @@
         justify-content: center;
         gap: 10px;
         margin-top: 0px;
+    }
+
+    /* section seven */
+    #section-seven {
+        padding-top: 80px;
+    }
+
+    #section-seven .seventh-container .first-layer {
+        padding-bottom: 0px;
+    }
+
+    #section-seven .seventh-container h1 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    #section-seven .seventh-container p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #section-seven .seventh-container .second-layer {
+        flex-flow: column;
+    }
+
+    #section-seven .seventh-container .third-layer a::before {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #section-seven .seventh-container .third-layer a:hover {
+        background: var(--WHITE);
+        color: var(--RED);
+    }
+
+    #section-seven .seventh-container .third-layer a:hover::before {
+        width: 0%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 1em .8em;
+        margin: auto;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container p {
+        font-size: 11px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.2;
+        text-align: center;
     }
 
     }
