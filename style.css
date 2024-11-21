@@ -1288,7 +1288,7 @@
     /* Section sevent */
 
     #section-seven {
-        background: #0a0a0a;
+        background: var(--BLACK);
         height: 100vh;
         background-size: cover;
         background-position: center;
