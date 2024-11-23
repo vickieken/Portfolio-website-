@@ -146,6 +146,13 @@ let displayTestimonial = () => {
     <p>${testimonials[i].testimonial}</p>
     <img src = ${testimonials[i].image}>
     <i class = "fa fa-quote-left"></i>
+    <ul>
+        <li><i class = "fa fa-star"></i></li>
+        <li><i class = "fa fa-star"></i></li>
+        <li><i class = "fa fa-star"></i></li>
+        <li><i class = "fa fa-star"></i></li>
+        <li><i class = "fa fa-star"></i></li>
+    </ul>
     <h3>${testimonials[i].name}</h3>
     <h6>${testimonials[i].job}</h6>
     `;

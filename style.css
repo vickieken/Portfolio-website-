@@ -945,6 +945,7 @@
     flex-flow: column;
     color: var(--WHITE);
     gap: 20px;
+    width: 100%;
     }
 
     #section-four .fourth-container .block-1 {
@@ -1206,6 +1207,7 @@
         padding: 80px;
         scroll-snap-align: start;
     transition: transform 0.8s ease;
+    width: 100%;
 }
 
     #section-five .fifth-container {
@@ -1214,6 +1216,7 @@
     align-items: center;
     flex-flow: column;
     color: var(--WHITE);
+    width: 100%;
     }
 
     #section-five .fifth-container .block-1 {
@@ -1389,6 +1392,7 @@
     flex-flow: column;
     color: var(--WHITE);
     gap: 20px;
+    width: 100%;
     }
 
     #section-six .sixth-container .block-1 {
@@ -1500,6 +1504,7 @@
         color: var(--LIGHTER-GREY);
         line-height: 1.4;
         padding-top: 20px;
+        text-align: center;
     }
 
     #section-six .sixth-container .wrapper {
@@ -1728,6 +1733,7 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    width: 100%;
     }
 
     #section-seven .seventh-container .block-1 {
@@ -1926,6 +1932,19 @@
         display: block;
     }
 
+    #section-seven .seventh-container .wrapper .testimonial-container ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    #section-seven .seventh-container .wrapper .testimonial-container ul li .fa-star {
+        font-size: 8px;
+        color: gold;
+    }
+
     #section-seven .seventh-container .wrapper .testimonial-container h6 {
         font-size: 10px;
         color: var(--RED);
@@ -1943,6 +1962,229 @@
         object-fit: cover;
         border-radius: 50%;
         background: var(--RED);
+    }
+
+    /* Section eight */
+
+    #section-eight {
+        background: var(--BLACK);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        padding: 80px;
+        scroll-snap-align: start;
+        transition: transform 0.8s ease;
+    }
+
+    #section-eight .eighth-container {
+    display: flex;
+    flex-flow: column;
+    color: var(--WHITE);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    #section-eight .eighth-container .block-1 {
+        animation: block-1 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 60%;
+    }
+
+    @keyframes block-1 {
+        from {
+            opacity: 0;
+            /* scale: 0; */
+            transform: translateY(500px);
+        }
+        to {
+            opacity: 1;
+            /* scale: 1; */
+            transform: translateY(0px);
+        }
+    }
+
+    #section-eight .eighth-container .block-2 {
+        animation: block-2 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    @keyframes block-2 {
+        from {
+            opacity: 0;
+            /* scale: 0; */
+            transform: translateY(500px);
+        }
+        to {
+            opacity: 1;
+            /* scale: 1; */
+            transform: translateY(0px);
+        }
+    }
+
+    #section-eight .eighth-container .block-3 {
+        animation: block-2 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    @keyframes block-3 {
+        from {
+            opacity: 0;
+            /* scale: 0; */
+            transform: translateY(500px);
+        }
+        to {
+            opacity: 1;
+            /* scale: 1; */
+            transform: translateY(0px);
+        }
+    }
+
+    #section-eight .eighth-container hr {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #section-eight .eighth-container .dot {
+        color: var(--RED);
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-eight .eighth-container .first-layer h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    #section-eight .eighth-container h4 {
+        white-space: nowrap;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #section-eight .eighth-container p {
+        font-size: 13px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.4;
+        padding-top: 20px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .biography {
+        width: 70%;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services {
+        width: 100%;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services h4 {
+        text-align: right;
+    }
+
+    #section-eight .eighth-container .dot {
+        color: var(--RED);
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #section-eight .eighth-container h1 {
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 5px;
+    }
+
+    
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item {
+        padding-bottom: 15px;
+    }
+    
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .fab, 
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .fa  {
+        font-size: 14px;
+        text-decoration: none;
+        color: var(--RED);
+        margin-bottom: 7px;
+        border: 1px solid var(--WHITE);
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details a {
+        font-size: 13px;
+        text-decoration: none;
+        color: var(--WHITE);
+        padding-bottom: 5px;
+        transition: all 1s ease-in-out;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details a:hover {
+        color: var(--RED);
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details span {
+        font-size: 11px;
+        padding-bottom: 10px;
+        color: var(--LIGHTER-GREY);
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .biography h4 {
+        padding-bottom: 10px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .biography p {
+        font-size: 13px;
+        color: var(--LIGHTER-GREY);
+        line-height: 1.4;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services h4 {
+        padding-bottom: 10px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services .map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        height: 410px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services .map-container .map {
+        width: 100%; 
+        height: 410px;
     }
 
 
@@ -2489,6 +2731,96 @@
         color: var(--LIGHTER-GREY);
         line-height: 1.2;
         text-align: center;
+    }
+
+    /* section eight */
+    #section-eight {
+        padding-top: 80px;
+    }
+
+    #section-eight .eighth-container {
+        gap: 0px;
+        }
+
+    #section-eight .eighth-container .first-layer {
+        padding-bottom: 0px;
+    }
+
+    #section-eight .eighth-container h4 {
+        white-space: nowrap;
+        text-transform: uppercase;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    #section-eight .eighth-container .block-3 {
+        animation: block-3 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 25%;
+    }
+
+    @keyframes block-3 {
+        from {
+            opacity: 0;
+            /* scale: 0; */
+            transform: translateY(500px);
+        }
+        to {
+            opacity: 1;
+            /* scale: 1; */
+            transform: translateY(0px);
+        }
+    }
+
+    #section-eight .eighth-container .first-layer h1 {
+        text-align: center;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    #section-eight .eighth-container p {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item {
+        padding-bottom: 5px;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .biography {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services h4,
+    #section-eight .eighth-container .eight-container-content .about-details .biography h4 {
+        text-align: center;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services .map-container {
+        height: 230px;
+    }
+
+    #section-eight .eighth-container .eight-container-content .about-details .services .map-container .map {
+        height: 230px;
     }
 
     }
