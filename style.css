@@ -2134,29 +2134,41 @@
     #section-eight .eighth-container .about-details .biography .contact-content .contact-item .fa  {
         font-size: 14px;
         text-decoration: none;
-        color: var(--RED);
+        color: var(--WHITE);
         margin-bottom: 7px;
-        border: 1px solid var(--WHITE);
+        border: 1px solid var(--RED);
         padding: 10px;
         border-radius: 50%;
+        transition: all 1s ease-in-out;
     }
 
     #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details a {
-        font-size: 13px;
+        font-size: 10px;
         text-decoration: none;
         color: var(--WHITE);
-        padding-bottom: 5px;
+        padding: 5px;
         transition: all 1s ease-in-out;
+        text-align: center;
+        background: var(--RED);
+        border-radius: 15px;
+        margin-bottom: 5px;
     }
 
     #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details a:hover {
         color: var(--RED);
+        background: var(--WHITE);           
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details a:hover .contact-item .fa {
+        color: var(--RED);
+        border: 1px solid var(--WHITE);
     }
 
     #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details span {
         font-size: 11px;
         padding-bottom: 10px;
         color: var(--LIGHTER-GREY);
+        text-align: left;
     }
 
     #section-eight .eighth-container .eight-container-content .about-details .biography h4 {
@@ -2821,6 +2833,10 @@
 
     #section-eight .eighth-container .eight-container-content .about-details .services .map-container .map {
         height: 230px;
+    }
+
+    #section-eight .eighth-container .about-details .biography .contact-content .contact-item .contact-details span {
+        text-align: center;
     }
 
     }
