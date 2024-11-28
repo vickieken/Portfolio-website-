@@ -970,7 +970,7 @@
     #section-four .fourth-container .block-2 {
         animation: block-2 linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 50%;
+        animation-range: entry 0% cover 40%;
     }
 
     @keyframes block-2 {
@@ -989,7 +989,7 @@
     #section-four .fourth-container .block-3 {
         animation: block-3 linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 35%;
     }
 
     @keyframes block-3 {
@@ -1455,7 +1455,7 @@
     #section-six .sixth-container .block-4 {
         animation: block-4 linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 20%;
+        animation-range: entry 0% cover 12%;
     }
 
     @keyframes block-4 {
@@ -1967,7 +1967,7 @@
     /* Section eight */
 
     #section-eight {
-        background: var(--BLACK);
+        background: #0a0a0a;
         height: 100vh;
         background-size: cover;
         background-position: center;
@@ -2173,7 +2173,7 @@
         padding-bottom: 10px;
     }
 
-    #section-eight .eighth-container .eight-container-content .about-details .services .map-container {
+    #section-eight .eighth-container  .services .map-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2233,7 +2233,7 @@
         height: 100vh;
         background: var(--DARK-GREY);
         width: 100%;
-        transition: all 2s ease-in-out;
+        transition: all 1.3s ease-in-out;
         z-index: 1;
         display: flex;
         flex-flow: column;
