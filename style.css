@@ -166,7 +166,7 @@
         display: none;
     } 
 
-    nav .nav-footer .social-icons .fab {
+    nav .nav-footer .social-icons a .fab {
         transition: all 1s ease-in-out;
         cursor: pointer;
         color: var(--WHITE);
