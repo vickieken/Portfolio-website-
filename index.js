@@ -15,6 +15,9 @@ const nextButn = document.querySelector(".fa-caret-right");
 const backBtn = document.querySelector(".fa-caret-left");
 // const fillWeb = document.querySelectorAll("");
 
+
+// Menu Bar Functionalities
+
 menuBar.addEventListener("click", ()=> {
     navOption.classList.toggle("showbar");
     backBtn.style.zIndex = "0";
@@ -80,7 +83,7 @@ backBtn.addEventListener('click', ()=> {
 });
 
 
-// Testimonials
+// Testimonials text content
 
 const testimonials = [
     {
@@ -114,6 +117,8 @@ const testimonials = [
         testimonial: "Working with [Your Name] was a game-changer. From web development to graphics and UI/UX design, they delivered everything we asked for, and more!",
     }, 
 ];
+
+// TESTIMONIAL FUNCTIONALITY
 
 // Current Slide
 
